@@ -1,0 +1,19 @@
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+/* Print styles for the Reports page: hide navigation chrome and controls,
+   keep only the report content when the user clicks "Print". */
+@media print {
+  .no-print,
+  header, nav, aside {
+    display: none !important;
+  }
+  body, #root {
+    background: #fff !important;
+  }
+}
